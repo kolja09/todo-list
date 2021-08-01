@@ -13,7 +13,7 @@ const AddTodo = React.lazy(
     })
 );
 
-function App() {
+const App = () => {
   const [todos, setTodos] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
@@ -28,7 +28,7 @@ function App() {
       });
   }, []);
 
-  function toggleTodo(id) {
+  const toggleTodo = (id) => {
     setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
@@ -39,7 +39,7 @@ function App() {
     );
   }
 
-  function removeTodo(id) {
+  const removeTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   }
 

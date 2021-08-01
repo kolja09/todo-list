@@ -8,9 +8,9 @@ import TodoItem from './TodoItem';
       margin: 0,
       padding:0
     }
-  }
+  };
 
- function TodoList (props){
+ const TodoList = (props) => {
  
   return(
     <ul style={styles.ul}>
